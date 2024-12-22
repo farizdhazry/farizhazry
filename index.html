@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">Fariz Hazry</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Skills & Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Fariz Hazry</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Skills & Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/farizhazryPic.jpg" alt="Fariz Hazry Profile Picture" style="border-radius: 50%;">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Fariz Hazry</h1>
+            <p class="section__text__p2">Bachelor of Information Technology Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/UpdatedResumeFariz.pdf')">Download Resume</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href = 'https://www.linkedin.com/in/fariz-hazry-971307308/'">
+                <img src="./assets/github.png" alt="LinkedIn Profile" class="icon" onclick="location.href = 'https://github.com/farizdhazry'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/farizpropic.jpg" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
+                        <h3>Secondary Education</h3>
+                        <h4>Kolej Yayasan Saad Melaka</h4>
+                        <p>Sijil Pelajaran Malaysia(SPM): 9A's</p>
+                        <p></p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Tertiary Education</h3>
+                        <h4>Universiti Teknologi PETRONAS</h4>
+                        <p>Bachelor of Information Technology <br/> Current CGPA: 3.51</p>
+                    </div>
+                </div>    
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi incidunt sed animi modi numquam accusamus saepe quaerat nobis reiciendis? Quidem soluta temporibus omnis reiciendis distinctio, tempora incidunt, ut atque, asperiores odio nesciunt suscipit quia ducimus quasi laudantium officia obcaecati qui!</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Skills & Experiences</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technical Skills</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        </article>
+                        <div>
+                            <h3>HTML</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        </article>
+                        <div>
+                            <h3>CSS</h3>
+                            <p>Intermediate</p>
+                        </div>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        </article>
+                        <div>
+                            <h3>JavaScript</h3>
+                            <p>Basic</p>
+                        </div>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        </article>
+                        <div>
+                            <h3>Python</h3>
+                            <p>Basic</p>
+                        </div>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        </article>
+                        <div>
+                            <h3>Java</h3>
+                            <p>Basic</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/wiuc.jpg" alt="Experience 1" class="exp-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">WIUC Rugby 7's 2023</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptates reprehenderit, ea in illum sed eaque debitis nesciunt ipsam quo est 
+                        expedita autem incidunt natus, laudantium molestiae quasi inventore veritatis consectetur odio. Assumenda excepturi accusamus, natus quam molestias
+                         ducimus nesciunt, animi officiis ab facilis expedita harum praesentium modi repellat doloremque.</p>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="Experience 2" class="exp-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Director Drillers Futsal Cup 2023</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus vitae eveniet minus perferendis ea itaque saepe quo quaerat odit illum.
+                         Ipsam quibusdam dignissimos asperiores consequuntur tenetur velit eius a nam ratione impedit dolor dolorum, placeat voluptatem optio autem 
+                         eaque quis praesentium soluta ipsa enim? Magni laboriosam recusandae unde nam repellat?</p>
+                </div>
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="Experience 3" class="exp-img" />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Monash Hackfest 2024</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quasi corrupti maiores pariatur saepe. Possimus animi sit sed,
+                        voluptatum nam atque recusandae amet aperiam accusamus cumque accusantium, distinctio voluptatem. Dicta corporis ipsum voluptates 
+                        repellat eius illo? Saepe delectus temporibus quis corporis, exercitationem corrupti nisi repudiandae animi, dicta at a tenetur.</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
